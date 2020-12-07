@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Perosnal Portfolio Website</title>
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--title-icon--------->
+<link rel="shortcut icon" href="images/icon.png">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--using FontAwesome---------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<!--For the overlay effect-->
+<style>
+	#overlay {
+	  position: fixed;
+	  display: none;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(0,0,0,0.5);
+	  z-index: 2;
+	  cursor: pointer;
+	}
+	
+	#text{
+	  position: relative;
+	  top: 50%;
+	  left: 50%;
+	  font-size: 50px;
+	  color: rgb(6, 31, 252);
+	  transform: translate(-50%,-50%);
+	  -ms-transform: translate(-50%,-50%);
+	}
+	</style>
+	
+</head>
+
+<body>
+	<!--main------------------------>
+	<section id="main">
+	<!--navigation-------------------------------->
+	<nav>
+	<!--logo--->
+	<a href="#" class="logo">HV</a>
+	<!--menu--------->
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li class="active"><a href="#main" >Home</a></li>	
+	<li><a href="#about">About</a></li>	
+	<li><a href="#services">Services</a></li>		
+	<li><a href="#contact-form">Contact</a></li>	
+	</ul>
+	<!--language-->
+	<a href="#" class="lang">En</a>
+	</nav>
+	<!--name--------------------------->
+	<div class="name">
+	<!--hello------->
+	<p><font color="black">Hello</font></p>
+	<!--name--->
+	<h1>I'm <font color="#17d1ac">Hitesh</font> Vijan</h1>
+	<!--details--------------->
+	<p class="details"><font color="black">You can download the CV below and get to know everything about my Projects , Internships , Certifications , Interests etc.</font></p>
+	<!--cv button-------------------->
+	<a href="https://drive.google.com/file/d/18MBxfpxBc8P5rOUL6Dl3ANfiWpusW8_W/view?usp=sharing" class="cv-btn" download="">Download Cv</a>
+	
+		
+	</div>
+		<!--down arrow-------------->
+	<div class="black-line" ></div>
+	<!--social---------------->
+	<div class="social">
+	<a href="#"><i class="fab fa-github"></i></a>	
+	<a href="#"><i class="fab fa-linkedin"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>	
+	</div>
+	
+	</section>
+	<!--about----------------------->
+		<section id="about">
+	<!--text---------------------->
+	<div class="about-text">
+	<h1>About Me</h1>
+	<h2>CEH | CSCU | IT Analyst</h2>
+	<p>My aim is to work with an organization where I can exhibit my talent and enhance my skills through challenging assignments and responsibility to meet company goals and objectives with full integrity and zest leading to career growth in a pragmatic way and hence a successful professional. I like to learn and groom myself with knowledge. I usually take up different types of task. Flexible and resourceful approach to problems encountered. Willing to participate in different set of skills.</p>
+	</div>
+	<!--about-model----------------->
+	<div class="about-model">
+	<img src="images/about-model.png" alt="model"/>	
+	</div>
+	
+	
+	</section>
+	<!--services-------------------->
+	<section id="services">
+	<!--heading-------------->
+	<div class="s-heading">
+	<h1>Services</h1>
+	<p>Here Is The Something which I usually do.</p>
+	</div>
+	<!--services-box-container--------->
+	<div class="b-container">
+	<!--box-1---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">Front-End</div>
+		<!--name------->
+		<img src="images/s1.png">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a href="#">Designing your website and making a professional connection with the client which can help them as well as me to grow.  </a>	
+	</div>
+	</div>
+		<!--box-2---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+	<!--type----------->
+		<div class="s-type">Back-End</div>
+		<!--name------->
+		<img src="images/s2.png">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a href="#">Making and maintaing a database is a good practice to follow.</a>	
+	</div>
+	</div>
+		<!--box-3---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">CEH | CSCU </div>
+		<!--name------->
+		<img src="images/download.jpeg">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a href="#">Finding out bugs and making your website secure is the most important thing for a developer so that the important data is not leaked. </a>	
+	</div>
+	</div>
+	</div>
+	</section>
+	
+	<!--Contact-btn------------------>
+	<section id="contact-btn">
+	<!--heading-------------->
+	<h1 class="c-b-heading">If You Have Any Project In Your Mind ?</h1>
+	<!--btn-------->
+	<div id="overlay" onclick="off()">
+		<div id="text">
+		hitesh.vijan123@gmail.com
+		</div>
+	  </div>
+	  
+	  <div style="padding:20px">
+		
+		<button onclick="on()">My Email</button>
+	  </div>
+	</section>
+	<!--contact-form------------------->
+	<section id="contact-form">
+	<form action="mailto:hitesh.vijan123@gmail.com" method="post" enctype="text/plain">
+	<!--left--------------------------------------->
+	<div class="contact-left">
+	<h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Anything to Share? </font></h1>
+	<!--name-------->
+	<div class="f-name">
+	<font >Name</font>
+	<input type="text" placeholder="Full Name" input type="text" name="YourName" value=""/>
+	</div>
+	<!--email-------->
+	<div class="f-email">
+	<font >Email</font>
+	<input type="email" placeholder="Example@gmail.com" name="YourEmail" value=""/>
+	</div>
+	</div>
+	<!--right------------------------------------------->
+	<div class="contact-right">
+	<!--message-------->
+	<div class="message" >
+	<font >Message</font>
+	<textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+	</div>
+	<!--submit-btn------------>
+	<button >submit</button>
+	</div>
+		
+	</form>
+	
+	</section>
+	
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
+	
+		  /*Responsive Navigation*/
+	  $(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')
+		 
+		 $('nav ul').toggleClass('active-menu')
+		
+		 
+	 })
+ });
+	
+	</script>
+	<script>
+		function on() {
+		  document.getElementById("overlay").style.display = "block";
+		}
+		
+		function off() {
+		  document.getElementById("overlay").style.display = "none";
+		}
+		</script>
+</body>
+</html>
